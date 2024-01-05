@@ -76,7 +76,7 @@ body {
     flex-direction: column;
     justify-content: center;
     row-gap: 25px;
-    z-index: -1;
+
 
 }
 
@@ -86,7 +86,22 @@ body {
     font-size: 50px;
     font-weight: 700;
     color: #464748;
+    position: relative;
+    z-index: 2;
+   
 
+}
+
+.header-headline::before {
+    content: "";
+    display: block;
+    width: 105px;
+    height: 55px;
+    background-color: var(--primary-blue);
+    position: absolute;
+    top: 25%;
+    z-index: -1;
+   
 }
 
 .header-text {
